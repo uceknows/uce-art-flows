@@ -1,0 +1,1460 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="UCE Art-Flows - Premium Custom T-Shirt Printing, Jerseys, Merch & More in Buea, Cameroon. Made Once, Worn Forever.">  
+    <title>UCE Art-Flows • Made Once, Worn Forever</title>  
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">  
+    <style>  
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');  
+          
+        :root {  
+            --primary: #e11d8a;  
+        }  
+          
+        * {  
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;  
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+            transition-duration: 150ms;  
+        }  
+          
+        .tail-container * {  
+            font-family: 'Inter', system_ui, sans-serif;  
+        }  
+          
+        .heading-font {  
+            font-family: 'Playfair Display', sans-serif;  
+        }  
+  
+        .hero-bg {  
+            background: linear-gradient(180deg, #1a0f3d 0%, #2a1b5e 40%, #1e1438 100%);  
+            background-image:   
+                radial-gradient(circle at 30% 20%, rgba(225, 29, 138, 0.15) 0%, transparent 50%),  
+                radial-gradient(circle at 70% 80%, rgba(147, 51, 234, 0.15) 0%, transparent 50%);  
+            position: relative;  
+            overflow: hidden;  
+        }  
+          
+        .hero-bg::before {  
+            content: '';  
+            position: absolute;  
+            top: 0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%;  
+            background: url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat;  
+            opacity: 0.35;  
+            mix-blend-mode: screen;  
+            z-index: -1;  
+            animation: subtleClouds 120s linear infinite;  
+        }  
+          
+        @keyframes subtleClouds {  
+            0% { background-position: 0% 50%; }  
+            100% { background-position: 100% 50%; }  
+        }  
+          
+        .wave-banner {  
+            background: linear-gradient(90deg, #e11d8a, #f472b6);  
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 15% 100%, 0 85%);  
+            box-shadow: 0 10px 15px -3px rgb(225 29 138);  
+        }  
+          
+        .service-card {  
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);  
+        }  
+          
+        .service-card:hover {  
+            transform: translateY(-8px) scale(1.03);  
+            box-shadow: 0 25px 50px -12px rgb(225 29 138 / 0.25);  
+        }  
+          
+        .hex-grid {  
+            display: grid;  
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));  
+            gap: 2rem;  
+        }  
+          
+        .gallery-img {  
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);  
+            filter: brightness(0.95) contrast(1.1);  
+        }  
+          
+        .gallery-img:hover {  
+            transform: scale(1.08) rotate(2deg);  
+            filter: brightness(1.1) contrast(1.2);  
+            box-shadow: 0 0 0 8px rgba(225, 29, 138, 0.3);  
+        }  
+          
+        .texture-bg {  
+            background:   
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),  
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);  
+            background-size: 60px 60px;  
+        }  
+          
+        .whatsapp-float {  
+            animation: pulse 2s infinite;  
+        }  
+    </style>  
+</head>  
+<body class="tail-container text-white">  
+    <!-- NAVBAR -->  
+    <nav class="bg-[#1a0f3d]/95 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">  
+        <div class="max-w-screen-2xl mx-auto px-6 py-5 flex items-center justify-between">  
+            <!-- Logo -->  
+            <div class="flex items-center gap-3">  
+                <div class="w-10 h-10 bg-gradient-to-br from-pink-500 to-violet-600 rounded-2xl flex items-center justify-center text-2xl shadow-inner">  
+                    🎨  
+                </div>  
+                <div>  
+                    <h1 class="heading-font text-3xl tracking-tighter">UCE <span class="text-[#e11d8a]">Art-Flows</span></h1>  
+                    <p class="text-xs text-pink-200 -mt-1 tracking-[2px]">MADE ONCE • WORN FOREVER</p>  
+                </div>  
+            </div>  
+  
+            <!-- Desktop Menu -->  
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">  
+                <a href="#home" class="hover:text-[#e11d8a] flex items-center gap-1"><i class="fa-solid fa-house"></i> HOME</a>  
+                <a href="#services" class="hover:text-[#e11d8a] flex items-center gap-1"><i class="fa-solid fa-shirt"></i> SERVICES</a>  
+                <a href="#gallery" class="hover:text-[#e11d8a] flex items-center gap-1"><i class="fa-solid fa-images"></i> GALLERY</a>  
+                <a href="#book" class="hover:text-[#e11d8a] flex items-center gap-1"><i class="fa-solid fa-calendar"></i> BOOK NOW</a>  
+            </div>  
+  
+            <div class="flex items-center gap-4">  
+                <!-- Instagram -->  
+                <a href="https://instagram.com/uceknows" target="_blank"   
+                   class="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-3xl text-sm font-medium">  
+                    <i class="fa-brands fa-instagram text-xl"></i>  
+                    <span class="hidden sm:inline">@uceknows</span>  
+                </a>  
+                  
+                <!-- WhatsApp Button in Nav -->  
+                <a href="https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20I%27d%20like%20to%20place%20an%20order%20or%20get%20a%20quote%20%F0%9F%8C%9F"   
+                   target="_blank"  
+                   class="flex items-center gap-2 bg-[#25D366] hover:bg-[#20b858] text-white px-6 py-3 rounded-3xl font-semibold text-sm shadow-lg">  
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>  
+                    <span>CHAT ON WHATSAPP</span>  
+                </a>  
+  
+                <button onclick="toggleMobileMenu()" class="md:hidden text-3xl">  
+                    <i class="fa-solid fa-bars"></i>  
+                </button>  
+            </div>  
+        </div>  
+          
+        <!-- Mobile Menu -->  
+        <div id="mobileMenu" class="hidden md:hidden bg-[#1a0f3d] border-t border-white/10 px-6 py-6">  
+            <div class="flex flex-col gap-6 text-lg">  
+                <a href="#home" onclick="toggleMobileMenu()" class="flex items-center gap-3"><i class="fa-solid fa-house w-6"></i> Home</a>  
+                <a href="#services" onclick="toggleMobileMenu()" class="flex items-center gap-3"><i class="fa-solid fa-shirt w-6"></i> Our Services</a>  
+                <a href="#gallery" onclick="toggleMobileMenu()" class="flex items-center gap-3"><i class="fa-solid fa-images w-6"></i> Gallery</a>  
+                <a href="#book" onclick="toggleMobileMenu()" class="flex items-center gap-3"><i class="fa-solid fa-phone w-6"></i> Book Now</a>  
+            </div>  
+        </div>  
+    </nav>  
+  
+    <!-- HERO SECTION -->  
+    <header id="home" class="hero-bg min-h-screen flex items-center relative">  
+        <div class="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center pt-12">  
+            <!-- Left Content -->  
+            <div class="space-y-8">  
+                <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-8 py-3 rounded-3xl text-sm font-medium border border-white/20">  
+                    <span class="text-[#e11d8a] text-2xl">✦</span>  
+                    BUEA • CAMEROON  
+                    <span class="text-[#e11d8a] text-2xl">✦</span>  
+                </div>  
+                  
+                <h1 class="text-7xl md:text-8xl leading-none font-bold heading-font tracking-tighter">  
+                    UCE<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e11d8a] to-[#c026d3]">Art-Flows</span>  
+                </h1>  
+                  
+                <div class="wave-banner text-white text-5xl md:text-6xl font-bold py-6 px-12 inline-block max-w-md heading-font">  
+                    MADE ONCE<br>WORN FOREVER  
+                </div>  
+                  
+                <p class="text-2xl text-pink-100 max-w-lg">  
+                    Premium custom printing, jerseys, merchandise &amp; creative designs that last forever.  
+                </p>  
+                  
+                <div class="flex flex-wrap gap-4">  
+                    <a href="#book"   
+                       class="inline-flex items-center gap-3 bg-[#e11d8a] hover:bg-[#c026d3] text-white font-semibold text-xl px-10 py-6 rounded-3xl shadow-2xl">  
+                        <i class="fa-solid fa-arrow-right"></i>  
+                        BOOK YOUR DESIGN  
+                    </a>  
+                      
+                    <a href="https://wa.me/237651773566" target="_blank"  
+                       class="inline-flex items-center gap-3 border-2 border-white/30 hover:border-white/70 text-white font-semibold text-xl px-8 py-6 rounded-3xl">  
+                        <i class="fa-brands fa-whatsapp text-3xl"></i>  
+                        WHATSAPP US  
+                    </a>  
+                </div>  
+                  
+                <!-- Trust badges -->  
+                <div class="flex items-center gap-8 text-sm opacity-75">  
+                    <div class="flex items-center gap-2">  
+                        <i class="fa-solid fa-check-circle"></i>  
+                        100% Custom  
+                    </div>  
+                    <div class="flex items-center gap-2">  
+                        <i class="fa-solid fa-check-circle"></i>  
+                        Fast Turnaround  
+                    </div>  
+                    <div class="flex items-center gap-2">  
+                        <i class="fa-solid fa-check-circle"></i>  
+                        Premium Quality  
+                    </div>  
+                </div>  
+            </div>  
+              
+            <!-- Right Visual -->  
+            <div class="relative hidden md:flex justify-end">  
+                <div class="relative">  
+                    <!-- Floating hex images from the flyer -->  
+                    <div class="absolute -top-6 -right-6 w-64 h-64 bg-gradient-to-br from-pink-500/10 to-transparent rounded-[4rem] rotate-12 flex items-center justify-center backdrop-blur-sm border border-white/10">  
+                        <img src="https://picsum.photos/id/1005/420/420" alt="Custom embroidered cap"   
+                             class="w-52 h-52 object-cover rounded-3xl shadow-2xl border-8 border-white/30">  
+                    </div>  
+                      
+                    <div class="absolute -bottom-12 left-8 w-60 h-60 bg-gradient-to-br from-violet-500/10 to-transparent rounded-[4rem] -rotate-12 flex items-center justify-center backdrop-blur-sm border border-white/10">  
+                        <img src="https://picsum.photos/id/1011/420/420" alt="Custom jerseys"   
+                             class="w-52 h-52 object-cover rounded-3xl shadow-2xl border-8 border-white/30">  
+                    </div>  
+                      
+                    <!-- Big main visual -->  
+                    <div class="w-[520px] h-[520px] bg-gradient-to-br from-[#e11d8a] to-[#7e22ce] rounded-[4rem] p-4 shadow-2xl">  
+                        <div class="w-full h-full bg-[#1e1438] rounded-3xl flex items-center justify-center overflow-hidden">  
+                            <div class="text-center">  
+                                <img src="https://picsum.photos/id/866/520/520" alt="Premium custom apparel"   
+                                     class="w-96 h-96 object-cover rounded-3xl mx-auto shadow-xl">  
+                                <div class="mt-6 text-4xl font-bold heading-font text-white drop-shadow-lg">MADE ONCE • WORN FOREVER</div>  
+                            </div>  
+                        </div>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+          
+        <!-- Scroll indicator -->  
+        <div class="absolute bottom-12 left-1/2 flex flex-col items-center gap-2 text-xs tracking-widest">  
+            SCROLL FOR MORE  
+            <div class="w-px h-12 bg-gradient-to-b from-transparent via-white/40 to-transparent"></div>  
+        </div>  
+          
+        <!-- Floating WhatsApp -->  
+        <a href="https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20Ready%20to%20create%20something%20epic%3F%20%F0%9F%8C%9F"   
+           target="_blank"  
+           class="whatsapp-float fixed bottom-8 right-8 z-50 bg-[#25D366] text-white w-16 h-16 rounded-3xl flex items-center justify-center shadow-2xl text-4xl hover:scale-110">  
+            <i class="fa-brands fa-whatsapp"></i>  
+        </a>  
+    </header>  
+  
+    <!-- SERVICES SECTION -->  
+    <section id="services" class="texture-bg py-24 border-t border-white/10">  
+        <div class="max-w-screen-2xl mx-auto px-6">  
+            <div class="text-center mb-16">  
+                <span class="uppercase tracking-[3px] text-pink-400 font-medium">What we create</span>  
+                <h2 class="text-6xl heading-font mt-3">Our Services</h2>  
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-violet-600 mx-auto mt-6"></div>  
+            </div>  
+              
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">  
+                <!-- Service 1 -->  
+                <div class="service-card bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex flex-col">  
+                    <div class="text-6xl mb-6">👕</div>  
+                    <h3 class="text-3xl font-semibold mb-2">T-Shirt Printing</h3>  
+                    <p class="text-lg text-pink-100 flex-1">High-quality DTG, screen &amp; heat press printing on premium fabrics. Any design, any color, any quantity.</p>  
+                    <div class="mt-8 flex items-center justify-between text-sm uppercase font-medium">  
+                        <span class="text-pink-400">Starting at 5,000 XAF</span>  
+                        <i class="fa-solid fa-arrow-right text-2xl"></i>  
+                    </div>  
+                </div>  
+                  
+                <!-- Service 2 -->  
+                <div class="service-card bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex flex-col">  
+                    <div class="text-6xl mb-6">⚽</div>  
+                    <h3 class="text-3xl font-semibold mb-2">Jerseys</h3>  
+                    <p class="text-lg text-pink-100 flex-1">Custom football, basketball &amp; team jerseys. Sublimation printing that never fades. Perfect for clubs &amp; schools.</p>  
+                    <div class="mt-8 flex items-center justify-between text-sm uppercase font-medium">  
+                        <span class="text-pink-400">Team deals available</span>  
+                        <i class="fa-solid fa-arrow-right text-2xl"></i>  
+                    </div>  
+                </div>  
+                  
+                <!-- Service 3 -->  
+                <div class="service-card bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex flex-col">  
+                    <div class="text-6xl mb-6">🎨</div>  
+                    <h3 class="text-3xl font-semibold mb-2">Merchandise Creation</h3>  
+                    <p class="text-lg text-pink-100 flex-1">Hoodies, caps, tote bags, mugs &amp; full brand merchandise kits. Your logo, your story, your merch empire.</p>  
+                    <div class="mt-8 flex items-center justify-between text-sm uppercase font-medium">  
+                        <span class="text-pink-400">Full branding packages</span>  
+                        <i class="fa-solid fa-arrow-right text-2xl"></i>  
+                    </div>  
+                </div>  
+                  
+                <!-- Service 4 -->  
+                <div class="service-card bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex flex-col">  
+                    <div class="text-6xl mb-6">📄</div>  
+                    <h3 class="text-3xl font-semibold mb-2">Flyers &amp; Stickers</h3>  
+                    <p class="text-lg text-pink-100 flex-1">Eye-catching flyers, vinyl stickers, car decals &amp; promotional materials. Print-ready designs included.</p>  
+                    <div class="mt-8 flex items-center justify-between text-sm uppercase font-medium">  
+                        <span class="text-pink-400">Same-day options</span>  
+                        <i class="fa-solid fa-arrow-right text-2xl"></i>  
+                    </div>  
+                </div>  
+                  
+                <!-- Service 5 -->  
+                <div class="service-card bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex flex-col">  
+                    <div class="text-6xl mb-6">💌</div>  
+                    <h3 class="text-3xl font-semibold mb-2">Cards &amp; Invitations</h3>  
+                    <p class="text-lg text-pink-100 flex-1">Wedding cards, business cards, birthday invites, event tickets &amp; more. Elegant designs with premium paper.</p>  
+                    <div class="mt-8 flex items-center justify-between text-sm uppercase font-medium">  
+                        <span class="text-pink-400">Digital + print ready</span>  
+                        <i class="fa-solid fa-arrow-right text-2xl"></i>  
+                    </div>  
+                </div>  
+                  
+                <!-- Bonus visual service card -->  
+                <div class="service-card bg-gradient-to-br from-[#e11d8a]/10 to-violet-600/10 border-2 border-dashed border-pink-300/30 rounded-3xl p-8 flex items-center justify-center text-center">  
+                    <div>  
+                        <i class="fa-solid fa-palette text-7xl mb-6 text-pink-400"></i>  
+                        <h3 class="text-3xl font-semibold mb-3">Need something custom?</h3>  
+                        <p class="text-pink-200">We bring any creative idea to life.</p>  
+                        <a href="https://wa.me/237651773566" target="_blank"   
+                           class="mt-8 inline-block bg-white text-[#1a0f3d] px-8 py-4 rounded-3xl font-bold flex items-center gap-2 mx-auto">  
+                            TALK TO US ON WHATSAPP <i class="fa-brands fa-whatsapp"></i>  
+                        </a>  
+                    </div>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+  
+    <!-- GALLERY SECTION - Lots of images -->  
+    <section id="gallery" class="py-24 bg-[#120c2b]">  
+        <div class="max-w-screen-2xl mx-auto px-6">  
+            <div class="flex justify-between items-end mb-12">  
+                <div>  
+                    <span class="uppercase text-pink-400 text-sm font-medium tracking-widest">Real creations • Real impact</span>  
+                    <h2 class="text-6xl heading-font">Our Latest Work</h2>  
+                </div>  
+                <a href="https://wa.me/237651773566" target="_blank"   
+                   class="hidden md:flex items-center gap-3 text-[#e11d8a] font-semibold">  
+                    SEE MORE ON INSTAGRAM   
+                    <span class="text-4xl">→</span>  
+                </a>  
+            </div>  
+              
+            <!-- Hexagonal style grid but modern masonry -->  
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">  
+                <!-- Image 1 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/1005/800/800" alt="Embroidered LA cap with roses"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 2 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/1011/800/800" alt="Team jerseys - Man United style"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 3 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/160/800/800" alt="Custom Heaven Made t-shirt"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 4 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/201/800/800" alt="Custom business card design"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 5 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/1009/800/800" alt="Vibrant printed hoodie"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 6 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/251/800/800" alt="Sublimation football jersey"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 7 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/1003/800/800" alt="Custom vinyl sticker pack"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 8 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/133/800/800" alt="Elegant wedding invitation card"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 9 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/1006/800/800" alt="Premium branded tote bag"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 10 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/866/800/800" alt="Group of custom printed t-shirts"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 11 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/1016/800/800" alt="Embroidered snapback cap collection"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+                <!-- Image 12 -->  
+                <div class="aspect-square rounded-3xl overflow-hidden">  
+                    <img src="https://picsum.photos/id/29/800/800" alt="Event flyers and stickers"   
+                         class="gallery-img w-full h-full object-cover">  
+                </div>  
+            </div>  
+              
+            <p class="text-center text-pink-200 mt-12 text-sm">+ 200+ more designs available • All created for clients across Cameroon</p>  
+        </div>  
+    </section>  
+  
+    <!-- BOOK NOW / CONTACT SECTION -->  
+    <section id="book" class="py-24 bg-gradient-to-b from-[#120c2b] to-[#1a0f3d]">  
+        <div class="max-w-screen-2xl mx-auto px-6">  
+            <div class="grid lg:grid-cols-12 gap-16 items-center">  
+                <!-- Left info -->  
+                <div class="lg:col-span-5">  
+                    <div class="text-6xl heading-font leading-none mb-6">Book Now.<br>Let’s create something legendary.</div>  
+                    <p class="text-2xl text-pink-100">Whether it’s 10 t-shirts or 500 jerseys — we’re ready.</p>  
+                      
+                    <div class="mt-16 space-y-8">  
+                        <div class="flex gap-6 items-start">  
+                            <div class="text-4xl text-[#e11d8a]"><i class="fa-solid fa-phone"></i></div>  
+                            <div>  
+                                <p class="text-sm uppercase text-pink-300">Call or WhatsApp</p>  
+                                <a href="tel:+237651773566" class="text-4xl font-medium">+237 651 773 566</a>  
+                            </div>  
+                        </div>  
+                          
+                        <div class="flex gap-6 items-start">  
+                            <div class="text-4xl text-[#e11d8a]"><i class="fa-brands fa-instagram"></i></div>  
+                            <div>  
+                                <p class="text-sm uppercase text-pink-300">Instagram</p>  
+                                <a href="https://instagram.com/uceknows" target="_blank" class="text-4xl font-medium">@uceknows</a>  
+                            </div>  
+                        </div>  
+                          
+                        <div class="flex gap-6 items-start">  
+                            <div class="text-4xl text-[#e11d8a]"><i class="fa-solid fa-location-dot"></i></div>  
+                            <div>  
+                                <p class="text-sm uppercase text-pink-300">Location</p>  
+                                <p class="text-4xl font-medium">Buea, Cameroon</p>  
+                            </div>  
+                        </div>  
+                    </div>  
+                </div>  
+                  
+                <!-- Right form / quick action -->  
+                <div class="lg:col-span-7 bg-white/5 backdrop-blur-3xl border border-white/10 rounded-3xl p-10">  
+                    <h3 class="text-3xl mb-8">Quick Quote Request</h3>  
+                    <form onsubmit="handleSubmit(event)" class="space-y-8">  
+                        <div class="grid grid-cols-2 gap-6">  
+                            <div>  
+                                <label class="block text-xs uppercase mb-2">Your Name</label>  
+                                <input type="text" placeholder="John Doe"   
+                                       class="w-full bg-white/10 border border-white/20 focus:border-pink-400 rounded-2xl px-6 py-5 outline-none">  
+                            </div>  
+                            <div>  
+                                <label class="block text-xs uppercase mb-2">WhatsApp Number</label>  
+                                <input type="tel" value="+237"   
+                                       class="w-full bg-white/10 border border-white/20 focus:border-pink-400 rounded-2xl px-6 py-5 outline-none">  
+                            </div>  
+                        </div>  
+                          
+                        <div>  
+                            <label class="block text-xs uppercase mb-2">What do you need?</label>  
+                            <textarea rows="4" placeholder="Example: 50 custom t-shirts with our team logo + 20 jerseys..."   
+                                      class="w-full bg-white/10 border border-white/20 focus:border-pink-400 rounded-3xl px-6 py-5 outline-none resize-none"></textarea>  
+                        </div>  
+                          
+                        <button type="submit"  
+                                class="w-full bg-gradient-to-r from-[#e11d8a] to-[#c026d3] py-7 rounded-3xl text-2xl font-semibold flex items-center justify-center gap-4">  
+                            SEND REQUEST VIA WHATSAPP  
+                            <i class="fa-brands fa-whatsapp text-3xl"></i>  
+                        </button>  
+                    </form>  
+                    <p class="text-xs text-center mt-6 text-pink-200">We reply within minutes during business hours</p>  
+                </div>  
+            </div>  
+        </div>  
+    </section>  
+  
+    <!-- FOOTER -->  
+    <footer class="bg-[#0f0a24] py-16 border-t border-white/10">  
+        <div class="max-w-screen-2xl mx-auto px-6 text-center">  
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">  
+                <div class="flex items-center gap-3">  
+                    <div class="text-4xl">🎨</div>  
+                    <div class="heading-font text-4xl">UCE Art-Flows</div>  
+                </div>  
+                  
+                <p class="text-pink-200">© 2026 UCE Art-Flows • Buea, Cameroon<br>  
+                All designs are protected • Made with love &amp; creativity</p>  
+                  
+                <div class="flex gap-8 text-3xl">  
+                    <a href="https://wa.me/237651773566" target="_blank" class="hover:text-[#25D366]"><i class="fa-brands fa-whatsapp"></i></a>  
+                    <a href="https://instagram.com/uceknows" target="_blank" class="hover:text-[#e1306c]"><i class="fa-brands fa-instagram"></i></a>  
+                </div>  
+            </div>  
+              
+            <div class="mt-12 text-xs opacity-40">  
+                Made Once • Worn Forever • The official digital home of UCE Art-Flows  
+            </div>  
+        </div>  
+    </footer>  
+  
+    <script>  
+        // Tailwind script already loaded  
+        function initializeTailwind() {  
+            return {  
+                config(userConfig = {}) {  
+                    return {  
+                        content: [],  
+                        theme: {  
+                            extend: {  
+                                colors: {  
+                                    primary: '#e11d8a'  
+                                }  
+                            }  
+                        },  
+                        plugins: [],  
+                        ...userConfig,  
+                    }  
+                },  
+                theme: {},  
+            }  
+        }  
+          
+        function toggleMobileMenu() {  
+            const menu = document.getElementById('mobileMenu')  
+            menu.classList.toggle('hidden')  
+        }  
+          
+        function handleSubmit(e) {  
+            e.preventDefault()  
+            const whatsappLink = "https://wa.me/237651773566?text=Hi%20UCE%20Art-Flows%2C%20I%20just%20submitted%20a%20quote%20request%20from%20your%20website%21%20%F0%9F%8C%9F"  
+            window.open(whatsappLink, '_blank')  
+            alert("✅ Redirecting to WhatsApp... We'll reply in minutes!")  
+        }  
+          
+        // Auto initialize  
+        window.onload = () => {  
+            initializeTailwind()  
+            console.log('%c🚀 UCE Art-Flows website ready! Copy this code into index.html', 'color:#e11d8a; font-size:13px')  
+        }  
+    </script>  
+</body>  
+</html>  
+  
+  
+      
+      
+      
+      
+      
+      
+      
+  
+  
+      
+      
+          
+              
+              
+                  
+                    🎨  
+                  
+                  
+                      
+UCE Art-Flows  
+                      
+MADE ONCE • WORN FOREVER  
+                  
+              
+  
+              
+              
+                ++ HOME++  
+                ++ SERVICES++  
+                ++ GALLERY++  
+                ++ BOOK NOW++  
+              
+  
+              
+                  
+                  
+++[                    ](https://instagram.com/uceknows)++  
+++[                    @uceknows](https://instagram.com/uceknows)++  
+++[                ](https://instagram.com/uceknows)++  
+                  
+                  
+                  
+++[                    ](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20I%27d%20like%20to%20place%20an%20order%20or%20get%20a%20quote%20%F0%9F%8C%9F)++  
+++[                    CHAT ON WHATSAPP](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20I%27d%20like%20to%20place%20an%20order%20or%20get%20a%20quote%20%F0%9F%8C%9F)++  
+++[                ](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20I%27d%20like%20to%20place%20an%20order%20or%20get%20a%20quote%20%F0%9F%8C%9F)++  
+  
+                  
+                      
+                  
+              
+          
+          
+          
+          
+              
+                ++ Home++  
+                ++ Our Services++  
+                ++ Gallery++  
+                ++ Book Now++  
+              
+          
+      
+  
+      
+      
+          
+              
+              
+                  
+                    ✦  
+                    BUEA • CAMEROON  
+                    ✦  
+                  
+                  
+                  
+                    UCE** Art-Flows**  
+                  
+                  
+                  
+                    MADE ONCE  
+WORN FOREVER  
+                  
+                  
+                  
+                    Premium custom printing, jerseys, merchandise & creative designs that last forever.  
+                  
+                  
+                  
+                      
+++                        ++  
+++                        BOOK YOUR DESIGN++  
+++                    ++  
+                      
+                      
+++[                        ](https://wa.me/237651773566)++  
+++[                        WHATSAPP US](https://wa.me/237651773566)++  
+++[                    ](https://wa.me/237651773566)++  
+                  
+                  
+                  
+                  
+                      
+                          
+                        100% Custom  
+                      
+                      
+                          
+                        Fast Turnaround  
+                      
+                      
+                          
+                        Premium Quality  
+                      
+                  
+              
+              
+              
+              
+                  
+                      
+                      
+                          
+![420.jpg](Attachments/888330C3-4C99-4E1B-A674-88E46FBE1BAD.jpg)  
+                      
+                      
+                      
+                          
+![420.jpg](Attachments/16C87052-72C9-4DEB-B17A-AADE30FAB491.jpg)  
+                      
+                      
+                      
+                      
+                          
+                              
+                                  
+![520.jpg](Attachments/8D8D0A41-F8A6-4EEB-9585-280C868549CE.jpg)  
+                                  
+MADE ONCE • WORN FOREVER  
+                              
+                          
+                      
+                  
+              
+          
+          
+          
+          
+            SCROLL FOR MORE  
+              
+  
+          
+          
+          
+          
+++[            ](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20Ready%20to%20create%20something%20epic%3F%20%F0%9F%8C%9F)++  
+++[        ](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20Ready%20to%20create%20something%20epic%3F%20%F0%9F%8C%9F)++  
+      
+  
+      
+      
+          
+              
+                What we create  
+                  
+Our Services  
+                  
+  
+              
+              
+              
+                  
+                  
+                      
+👕  
+                      
+T-Shirt Printing  
+                      
+High-quality DTG, screen & heat press printing on premium fabrics. Any design, any color, any quantity.  
+                      
+                        Starting at 5,000 XAF  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+⚽  
+                      
+Jerseys  
+                      
+Custom football, basketball & team jerseys. Sublimation printing that never fades. Perfect for clubs & schools.  
+                      
+                        Team deals available  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+🎨  
+                      
+Merchandise Creation  
+                      
+Hoodies, caps, tote bags, mugs & full brand merchandise kits. Your logo, your story, your merch empire.  
+                      
+                        Full branding packages  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+📄  
+                      
+Flyers & Stickers  
+                      
+Eye-catching flyers, vinyl stickers, car decals & promotional materials. Print-ready designs included.  
+                      
+                        Same-day options  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+💌  
+                      
+Cards & Invitations  
+                      
+Wedding cards, business cards, birthday invites, event tickets & more. Elegant designs with premium paper.  
+                      
+                        Digital + print ready  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+                          
+                          
+Need something custom?  
+                          
+We bring any creative idea to life.  
+                          
+++[                            TALK TO US ON WHATSAPP ](https://wa.me/237651773566)++  
+++[                        ](https://wa.me/237651773566)++  
+                      
+                  
+              
+          
+      
+  
+      
+      
+          
+              
+                  
+                    Real creations • Real impact  
+                      
+Our Latest Work  
+                  
+                  
+++[                    SEE MORE ON INSTAGRAM ](https://wa.me/237651773566)++  
+++[                    →](https://wa.me/237651773566)++  
+++[                ](https://wa.me/237651773566)++  
+              
+              
+              
+              
+                  
+                  
+                      
+![800.jpg](Attachments/EE88DAE4-08AD-4FD1-AFAC-09FE629EC042.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/FE2E7415-A326-4DB9-B9C6-8E88A631BC80.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/6CB4A10A-F361-4E22-83BD-C8ECBE3948AC.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/A67ECE55-FB4A-4521-B7EC-E92A634950EA.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/4EFD3EB8-BFFA-4E31-813D-52D5086A06A5.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/F1AB4E93-D201-4851-A322-93AFEF6BF723.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/F5C0648F-FDFE-4342-9D58-DF2F29429EB5.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/EE8CC43C-689C-4581-9A7B-9DFB934AE92A.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/7D763089-2A26-4993-9B71-842D3E68B77F.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/ADB02E95-1C32-4927-800F-3AFCE4FFE052.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/B892849E-1A88-4FA6-AF6D-3564327103FB.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/54221D3E-A5F4-423E-82DF-775C0C0435BC.jpg)  
+                  
+              
+              
+              
++ 200+ more designs available • All created for clients across Cameroon  
+          
+      
+  
+      
+      
+          
+              
+                  
+                  
+                      
+Book Now.  
+Let’s create something legendary.  
+                      
+Whether it’s 10 t-shirts or 500 jerseys — we’re ready.  
+                      
+                      
+                          
+                              
+  
+                              
+                                  
+Call or WhatsApp  
+                                ++[+237 651 773 566](tel:+237651773566)++  
+                              
+                          
+                          
+                          
+                              
+  
+                              
+                                  
+Instagram  
+                                ++[@uceknows](https://instagram.com/uceknows)++  
+                              
+                          
+                          
+                          
+                              
+  
+                              
+                                  
+Location  
+                                  
+Buea, Cameroon  
+                              
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+Quick Quote Request  
+                      
+                          
+                              
+                                Your Name  
+                                  
+                              
+                              
+                                WhatsApp Number  
+                                  
+                              
+                          
+                          
+                          
+                            What do you need?  
+                              
+                          
+                          
+                          
+                            SEND REQUEST VIA WHATSAPP  
+                              
+                          
+                      
+                      
+We reply within minutes during business hours  
+                  
+              
+          
+      
+  
+      
+      
+          
+              
+                  
+                      
+🎨  
+                      
+UCE Art-Flows  
+                  
+                  
+                  
+© 2026 UCE Art-Flows • Buea, Cameroon  
+                All designs are protected • Made with love & creativity  
+                  
+                  
+                      
+                      
+                  
+              
+              
+              
+                Made Once • Worn Forever • The official digital home of UCE Art-Flows  
+              
+          
+      
+  
+      
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      
+      
+      
+  
+  
+      
+      
+          
+              
+              
+                  
+                    🎨  
+                  
+                  
+                      
+UCE Art-Flows  
+                      
+MADE ONCE • WORN FOREVER  
+                  
+              
+  
+              
+              
+                ++ HOME++  
+                ++ SERVICES++  
+                ++ GALLERY++  
+                ++ BOOK NOW++  
+              
+  
+              
+                  
+                  
+++[                    ](https://instagram.com/uceknows)++  
+++[                    @uceknows](https://instagram.com/uceknows)++  
+++[                ](https://instagram.com/uceknows)++  
+                  
+                  
+                  
+++[                    ](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20I%27d%20like%20to%20place%20an%20order%20or%20get%20a%20quote%20%F0%9F%8C%9F)++  
+++[                    CHAT ON WHATSAPP](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20I%27d%20like%20to%20place%20an%20order%20or%20get%20a%20quote%20%F0%9F%8C%9F)++  
+++[                ](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20I%27d%20like%20to%20place%20an%20order%20or%20get%20a%20quote%20%F0%9F%8C%9F)++  
+  
+                  
+                      
+                  
+              
+          
+          
+          
+          
+              
+                ++ Home++  
+                ++ Our Services++  
+                ++ Gallery++  
+                ++ Book Now++  
+              
+          
+      
+  
+      
+      
+          
+              
+              
+                  
+                    ✦  
+                    BUEA • CAMEROON  
+                    ✦  
+                  
+                  
+                  
+                    UCE** Art-Flows**  
+                  
+                  
+                  
+                    MADE ONCE  
+WORN FOREVER  
+                  
+                  
+                  
+                    Premium custom printing, jerseys, merchandise & creative designs that last forever.  
+                  
+                  
+                  
+                      
+++                        ++  
+++                        BOOK YOUR DESIGN++  
+++                    ++  
+                      
+                      
+++[                        ](https://wa.me/237651773566)++  
+++[                        WHATSAPP US](https://wa.me/237651773566)++  
+++[                    ](https://wa.me/237651773566)++  
+                  
+                  
+                  
+                  
+                      
+                          
+                        100% Custom  
+                      
+                      
+                          
+                        Fast Turnaround  
+                      
+                      
+                          
+                        Premium Quality  
+                      
+                  
+              
+              
+              
+              
+                  
+                      
+                      
+                          
+![420.jpg](Attachments/FD6CC454-70C1-43F6-9E31-28EF522FD01C.jpg)  
+                      
+                      
+                      
+                          
+![420.jpg](Attachments/965C5F95-9012-4BB5-9430-4DFFF50F3E88.jpg)  
+                      
+                      
+                      
+                      
+                          
+                              
+                                  
+![520.jpg](Attachments/EA91522C-0DB5-4D3F-9297-543D832A6B0D.jpg)  
+                                  
+MADE ONCE • WORN FOREVER  
+                              
+                          
+                      
+                  
+              
+          
+          
+          
+          
+            SCROLL FOR MORE  
+              
+  
+          
+          
+          
+          
+++[            ](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20Ready%20to%20create%20something%20epic%3F%20%F0%9F%8C%9F)++  
+++[        ](https://wa.me/237651773566?text=Hello%20UCE%20Art-Flows%21%20Ready%20to%20create%20something%20epic%3F%20%F0%9F%8C%9F)++  
+      
+  
+      
+      
+          
+              
+                What we create  
+                  
+Our Services  
+                  
+  
+              
+              
+              
+                  
+                  
+                      
+👕  
+                      
+T-Shirt Printing  
+                      
+High-quality DTG, screen & heat press printing on premium fabrics. Any design, any color, any quantity.  
+                      
+                        Starting at 5,000 XAF  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+⚽  
+                      
+Jerseys  
+                      
+Custom football, basketball & team jerseys. Sublimation printing that never fades. Perfect for clubs & schools.  
+                      
+                        Team deals available  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+🎨  
+                      
+Merchandise Creation  
+                      
+Hoodies, caps, tote bags, mugs & full brand merchandise kits. Your logo, your story, your merch empire.  
+                      
+                        Full branding packages  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+📄  
+                      
+Flyers & Stickers  
+                      
+Eye-catching flyers, vinyl stickers, car decals & promotional materials. Print-ready designs included.  
+                      
+                        Same-day options  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+💌  
+                      
+Cards & Invitations  
+                      
+Wedding cards, business cards, birthday invites, event tickets & more. Elegant designs with premium paper.  
+                      
+                        Digital + print ready  
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+                          
+                          
+Need something custom?  
+                          
+We bring any creative idea to life.  
+                          
+++[                            TALK TO US ON WHATSAPP ](https://wa.me/237651773566)++  
+++[                        ](https://wa.me/237651773566)++  
+                      
+                  
+              
+          
+      
+  
+      
+      
+          
+              
+                  
+                    Real creations • Real impact  
+                      
+Our Latest Work  
+                  
+                  
+++[                    SEE MORE ON INSTAGRAM ](https://wa.me/237651773566)++  
+++[                    →](https://wa.me/237651773566)++  
+++[                ](https://wa.me/237651773566)++  
+              
+              
+              
+              
+                  
+                  
+                      
+![800.jpg](Attachments/14753AA0-D5FB-416C-9361-29F6F2B61B37.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/99988BCD-A884-4A2E-B16C-399785140E05.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/BD099514-C863-4162-9E85-DF3FFDE8CA70.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/5AE0D237-CDDD-4D8D-94D2-BD84328866C8.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/6C4B7F21-8E60-4970-B3A3-FB3061BE3230.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/B06D50E7-58EE-48B7-A0DE-962D38172070.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/97F344C1-857A-4C57-A4BD-B70BAC8BC407.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/CC0F5596-99A6-4CF2-AAE5-2037180A1FC7.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/12060AA1-1CA7-4B9E-BC30-227D243A0CB6.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/C0013525-5F94-4850-A7F4-D301828367F5.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/E6DD1EF3-FF7F-4595-9CA1-2C2E1A18AC54.jpg)  
+                  
+                  
+                  
+                      
+![800.jpg](Attachments/CCCF4464-5DAA-4A4F-B4FB-E3A9071495AE.jpg)  
+                  
+              
+              
+              
++ 200+ more designs available • All created for clients across Cameroon  
+          
+      
+  
+      
+      
+          
+              
+                  
+                  
+                      
+Book Now.  
+Let’s create something legendary.  
+                      
+Whether it’s 10 t-shirts or 500 jerseys — we’re ready.  
+                      
+                      
+                          
+                              
+  
+                              
+                                  
+Call or WhatsApp  
+                                ++[+237 651 773 566](tel:+237651773566)++  
+                              
+                          
+                          
+                          
+                              
+  
+                              
+                                  
+Instagram  
+                                ++[@uceknows](https://instagram.com/uceknows)++  
+                              
+                          
+                          
+                          
+                              
+  
+                              
+                                  
+Location  
+                                  
+Buea, Cameroon  
+                              
+                          
+                      
+                  
+                  
+                  
+                  
+                      
+Quick Quote Request  
+                      
+                          
+                              
+                                Your Name  
+                                  
+                              
+                              
+                                WhatsApp Number  
+                                  
+                              
+                          
+                          
+                          
+                            What do you need?  
+                              
+                          
+                          
+                          
+                            SEND REQUEST VIA WHATSAPP  
+                              
+                          
+                      
+                      
+We reply within minutes during business hours  
+                  
+              
+          
+      
+  
+      
+      
+          
+              
+                  
+                      
+🎨  
+                      
+UCE Art-Flows  
+                  
+                  
+                  
+© 2026 UCE Art-Flows • Buea, Cameroon  
+                All designs are protected • Made with love & creativity  
+                  
+                  
+                      
+                      
+                  
+              
+              
+              
+                Made Once • Worn Forever • The official digital home of UCE Art-Flows  
+              
+          
+      
+  
+      
+  
+  
